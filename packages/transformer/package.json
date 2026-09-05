@@ -26,10 +26,10 @@
   },
   "dependencies": {
     "@goodie-ts/core": "workspace:^",
-    "ts-morph": "^24.0.0"
+    "ts-morph": "catalog:"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0"
+    "@types/node": "catalog:"
   },
   "files": [
     "dist"

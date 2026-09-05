@@ -13,7 +13,7 @@
     "access": "public"
   },
   "engines": {
-    "node": ">=22.13.0"
+    "node": ">=24.0.0"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,7 +35,7 @@
     "citty": "^0.1.6"
   },
   "devDependencies": {
-    "@types/node": "^22.0.0"
+    "@types/node": "catalog:"
   },
   "files": [
     "bin",

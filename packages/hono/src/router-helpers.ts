@@ -106,7 +106,7 @@ export function extractPathParam<T extends CoerceType = 'string'>(
   name: string,
   type?: T,
 ): CoerceMap[T] {
-  return coerce(c.req.param(name), type) as CoerceMap[T];
+  return coerce(c.req.param(name)!, type) as CoerceMap[T];
 }
 
 /** Extract a single query parameter with optional type coercion. */

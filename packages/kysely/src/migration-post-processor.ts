@@ -5,8 +5,7 @@ import {
   PostProcessor,
   Singleton,
 } from '@goodie-ts/core';
-import type { Migration as KyselyMigration } from 'kysely';
-import { Migrator } from 'kysely';
+import { type Migration as KyselyMigration, Migrator } from 'kysely/migration';
 import { AbstractMigration } from './abstract-migration.js';
 import { getMigrationName } from './decorators/migration.js';
 import { KyselyDatabase } from './kysely-database.js';

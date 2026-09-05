@@ -4,12 +4,12 @@ import { Migration } from '../src/decorators/migration.js';
 import { KyselyDatabase } from '../src/kysely-database.js';
 import { MigrationPostProcessor } from '../src/migration-post-processor.js';
 
-// Mock the Migrator class from kysely
-vi.mock('kysely', () => ({
+// Mock the Migrator class from Kysely's migration entry point.
+vi.mock('kysely/migration', () => ({
   Migrator: vi.fn(),
 }));
 
-import { Migrator } from 'kysely';
+import { Migrator } from 'kysely/migration';
 
 /** Create a mock KyselyDatabase instance. */
 function createMockKyselyDatabase() {

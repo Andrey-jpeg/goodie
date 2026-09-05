@@ -22,7 +22,7 @@
     "valibot": "^1.0.0",
     "hono": "^4.7.0",
     "@hono/node-server": "^1.14.0",
-    "kysely": "^0.27.0",
+    "kysely": "catalog:",
     "pg": "^8.13.0"
   },
   "devDependencies": {
@@ -31,9 +31,9 @@
     "@goodie-ts/transformer": "workspace:*",
     "@goodie-ts/vite-plugin": "workspace:*",
     "@types/pg": "^8.11.0",
-    "@types/node": "^22.19.11",
+    "@types/node": "catalog:",
     "typescript": "^5.7.3",
-    "vite": "^6.0.0",
+    "vite": "catalog:",
     "testcontainers": "^10.18.0",
     "@testcontainers/postgresql": "^10.18.0"
   }

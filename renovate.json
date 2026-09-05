@@ -33,9 +33,16 @@
       "enabled": false
     },
     {
-      "description": "Compile against the Node 22 API supported by the CLI.",
+      "description": "Compile against the Node 24 LTS API used by development and CI.",
       "matchPackageNames": ["@types/node"],
-      "allowedVersions": "22.x"
+      "allowedVersions": "24.x"
+    },
+    {
+      "description": "Track the stable pnpm 12 release channel.",
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["packageManager"],
+      "matchPackageNames": ["pnpm"],
+      "followTag": "latest-12"
     },
     {
       "description": "Batch routine compiler and test tooling updates across the workspace.",

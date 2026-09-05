@@ -15,8 +15,8 @@
     "@goodie-ts/http": "workspace:*",
     "@goodie-ts/kysely": "workspace:*",
     "hono": "^4.7.0",
-    "kysely": "^0.27.0",
-    "kysely-d1": "^0.3.0"
+    "kysely": "catalog:",
+    "kysely-d1": "^0.4.0"
   },
   "devDependencies": {
     "@goodie-ts/cli": "workspace:*",

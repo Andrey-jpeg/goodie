@@ -45,7 +45,7 @@ The CLI calls `transform()` directly (full rebuild every time). No `ts-morph` Pr
 
 ## Watch Behavior
 
-- Uses `fs.watch` with `{ recursive: true }` — requires Node >= 22.13 on Linux
+- Uses `fs.watch` with `{ recursive: true }`; the package requires Node >= 24
 - 100ms debounce (hardcoded, not exposed as CLI flag)
 - Skips non-`.ts` files and the generated output file (prevents infinite loops)
 - Returns a `WatchHandle` with `.close()` for cleanup
@@ -56,6 +56,6 @@ When `goodie generate --mode library` succeeds and produces components (count > 
 
 ## Gotchas
 
-- `engines.node >= 22.13.0` in package.json — `fs.watch` recursive support on Linux
+- `engines.node >= 24.0.0` in package.json
 - The generate command always runs an initial transform before entering watch mode
 - Exit code 1 on transform failure (non-watch mode)

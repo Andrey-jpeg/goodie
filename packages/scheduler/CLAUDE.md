@@ -8,7 +8,7 @@ Task scheduling for goodie-ts. `@Scheduled` decorator with compile-time discover
 |------|------|
 | `src/decorators/scheduled.ts` | `@Scheduled({ cron?, fixedRate?, fixedDelay?, concurrent? })` -- runtime no-op marker, read at compile time |
 | `src/scheduler-service.ts` | `SchedulerService` -- manages scheduled jobs; discovers them via `ApplicationContext.getDefinitions()`, `start()`, `stop()` |
-| `src/scheduler-transformer-plugin.ts` | `createSchedulerPlugin()` -- transformer plugin that scans `@Scheduled` and synthesizes the `SchedulerService` component |
+| `src/plugin.ts` | `createSchedulerPlugin()` -- transformer plugin exported from `@goodie-ts/scheduler/plugin` that scans `@Scheduled` and synthesizes the `SchedulerService` component |
 | `src/index.ts` | Public API re-exports |
 
 ## How It Works

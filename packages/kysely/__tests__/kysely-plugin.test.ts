@@ -3,7 +3,7 @@ import { transformInMemory } from '@goodie-ts/transformer';
 import { Project } from 'ts-morph';
 import { describe, expect, it } from 'vitest';
 import { DECORATOR_STUBS } from '../../transformer/__tests__/helpers.js';
-import { createKyselyPlugin } from '../src/kysely-transformer-plugin.js';
+import { createKyselyPlugin } from '../src/plugin.js';
 
 function createProject(files: Record<string, string>) {
   const project = new Project({ useInMemoryFileSystem: true });

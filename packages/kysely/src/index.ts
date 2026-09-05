@@ -20,8 +20,6 @@ export {
   SqliteKyselyDatabase,
 } from './dialects/index.js';
 export { KyselyDatabase } from './kysely-database.js';
-export type { KyselyPluginOptions } from './kysely-transformer-plugin.js';
-export { createKyselyPlugin } from './kysely-transformer-plugin.js';
 export { MigrationPostProcessor } from './migration-post-processor.js';
 export { PoolConfig } from './pool-config.js';
 export type { KyselyProvider } from './transaction-manager.js';

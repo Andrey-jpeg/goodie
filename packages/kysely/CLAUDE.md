@@ -20,7 +20,7 @@ Kysely database integration for goodie-ts: abstract `KyselyDatabase` with per-di
 | `src/transactional-interceptor.ts` | `TransactionalInterceptor` — AOP interceptor wrapping methods in transactions (order `-40`) |
 | `src/migration-runner.ts` | `MigrationRunner` — runs `@Migration` classes in sorted order via `@OnInit` |
 | `src/abstract-migration.ts` | `AbstractMigration` — base class with `up(db)` / `down?(db)` |
-| `src/kysely-transformer-plugin.ts` | `createKyselyPlugin()` — wires `TransactionManager` via abstract `KyselyDatabase` token, synthesizes interceptor |
+| `src/plugin.ts` | `createKyselyPlugin()` — build-time plugin exported from `@goodie-ts/kysely/plugin`; wires `TransactionManager` via abstract `KyselyDatabase` token and synthesizes the interceptor |
 | `src/decorators/transactional.ts` | `@Transactional({ propagation? })` — `REQUIRED` (default) or `REQUIRES_NEW` |
 | `src/decorators/migration.ts` | `@Migration('name')` — marks a class as a migration with a sortable name |
 

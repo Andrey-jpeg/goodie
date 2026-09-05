@@ -18,11 +18,15 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./plugin": {
+      "types": "./dist/plugin.d.ts",
+      "import": "./dist/plugin.js"
     }
   },
   "goodie": {
     "components": "dist/components.json",
-    "plugin": "dist/hono-plugin.js"
+    "plugin": "dist/plugin.js"
   },
   "scripts": {
     "build": "tsc && goodie generate --mode library",

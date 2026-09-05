@@ -38,6 +38,6 @@
     "@goodie-ts/cli": "workspace:*",
     "@goodie-ts/transformer": "workspace:*",
     "@types/node": "catalog:",
-    "ts-morph": "^24.0.0"
+    "ts-morph": "catalog:"
   }
 }

@@ -33,13 +33,12 @@
     "openapi3-ts": "^4.0.0"
   },
   "devDependencies": {
+    "@goodie-ts/cli": "workspace:*",
     "@goodie-ts/core": "workspace:*",
     "@goodie-ts/http": "workspace:*",
-    "@goodie-ts/cli": "workspace:*",
     "@goodie-ts/transformer": "workspace:*",
     "@types/node": "catalog:",
-    "openapi3-ts": "^4.4.0",
-    "ts-morph": "^24.0.0"
+    "openapi3-ts": "^4.6.1"
   },
   "files": [
     "dist"

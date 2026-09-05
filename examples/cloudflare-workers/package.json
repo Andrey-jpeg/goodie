@@ -14,15 +14,15 @@
     "@goodie-ts/hono": "workspace:*",
     "@goodie-ts/http": "workspace:*",
     "@goodie-ts/kysely": "workspace:*",
-    "hono": "^4.7.0",
+    "hono": "catalog:",
     "kysely": "catalog:",
     "kysely-d1": "^0.4.0"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20260904.1",
     "@goodie-ts/cli": "workspace:*",
     "@goodie-ts/transformer": "workspace:*",
-    "@cloudflare/workers-types": "^4.20250313.0",
-    "typescript": "^5.7.3",
-    "wrangler": "^4.0.0"
+    "typescript": "catalog:",
+    "wrangler": "^4.129.0"
   }
 }

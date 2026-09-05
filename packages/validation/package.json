@@ -42,7 +42,6 @@
     "@goodie-ts/http": "workspace:*",
     "@goodie-ts/transformer": "workspace:*",
     "@types/node": "catalog:",
-    "ts-morph": "^24.0.0",
-    "valibot": "^1.2.0"
+    "valibot": "catalog:"
   }
 }

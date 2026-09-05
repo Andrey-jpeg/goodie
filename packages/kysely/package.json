@@ -30,14 +30,14 @@
   },
   "peerDependencies": {
     "@goodie-ts/core": ">=2.0.0",
-    "kysely": ">=0.29.0",
-    "pg": ">=8.0.0",
-    "mysql2": ">=3.0.0",
-    "better-sqlite3": ">=9.0.0",
-    "kysely-neon": ">=0.3.0",
-    "kysely-planetscale": ">=1.0.0",
     "@libsql/kysely-libsql": ">=0.4.0",
-    "kysely-d1": ">=0.4.0"
+    "better-sqlite3": ">=9.0.0",
+    "kysely": ">=0.29.0",
+    "kysely-d1": ">=0.4.0",
+    "kysely-neon": ">=3.0.0",
+    "kysely-planetscale": ">=1.0.0",
+    "mysql2": ">=3.0.0",
+    "pg": ">=8.0.0"
   },
   "peerDependenciesMeta": {
     "pg": {
@@ -63,19 +63,19 @@
     }
   },
   "devDependencies": {
-    "@goodie-ts/core": "workspace:*",
     "@goodie-ts/cli": "workspace:*",
+    "@goodie-ts/core": "workspace:*",
     "@goodie-ts/transformer": "workspace:*",
     "@neondatabase/serverless": "^1.1.0",
     "@types/better-sqlite3": "^9.6.0",
     "@types/node": "catalog:",
-    "@types/pg": "^8.0.0",
+    "@types/pg": "catalog:",
     "better-sqlite3": "^13.0.3",
     "kysely": "catalog:",
     "kysely-neon": "^3.0.0",
-    "mysql2": "^3.0.0",
-    "pg": "^8.0.0",
-    "ts-morph": "^24.0.0"
+    "mysql2": "^3.24.3",
+    "pg": "catalog:",
+    "ts-morph": "catalog:"
   },
   "files": [
     "dist"

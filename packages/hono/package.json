@@ -33,14 +33,16 @@
     "@goodie-ts/http": "workspace:*",
     "@goodie-ts/cli": "workspace:*",
     "@goodie-ts/transformer": "workspace:*",
+    "@hono/node-server": "catalog:",
     "@types/node": "catalog:",
-    "ts-morph": "^24.0.0"
+    "hono": "catalog:",
+    "ts-morph": "catalog:"
   },
   "peerDependencies": {
     "@goodie-ts/core": ">=2.0.0",
     "@goodie-ts/http": ">=1.0.0",
-    "@hono/node-server": "^1.0.0",
-    "hono": "^4.0.0"
+    "@hono/node-server": "^1.19.15 || ^2.0.0",
+    "hono": "^4.12.34"
   },
   "peerDependenciesMeta": {
     "@hono/node-server": {

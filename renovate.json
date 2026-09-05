@@ -1,6 +1,54 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    "helpers:pinGitHubActionDigests",
+    ":maintainLockFilesWeekly"
+  ],
+  "automerge": false,
+  "prConcurrentLimit": 5,
+  "packageRules": [
+    {
+      "description": "Allow npm releases to settle before creating update branches.",
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "3 days",
+      "internalChecksFilter": "strict"
+    },
+    {
+      "description": "Changesets manages the versions and compatibility of local packages.",
+      "matchPackageNames": ["@goodie-ts/**"],
+      "enabled": false
+    },
+    {
+      "description": "Keep existing consumer compatibility when adding peer support.",
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["peerDependencies"],
+      "rangeStrategy": "widen"
+    },
+    {
+      "description": "Node support changes require a deliberate compatibility decision.",
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["engines"],
+      "matchPackageNames": ["node"],
+      "enabled": false
+    },
+    {
+      "description": "Compile against the Node 22 API supported by the CLI.",
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "22.x"
+    },
+    {
+      "description": "Batch routine compiler and test tooling updates across the workspace.",
+      "matchManagers": ["npm"],
+      "matchPackageNames": ["typescript", "ts-morph", "vitest", "@vitest/**"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "compiler and test tooling (non-major)"
+    },
+    {
+      "description": "Batch routine CI action updates while reviewing major upgrades separately.",
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch", "digest", "pinDigest"],
+      "groupName": "GitHub Actions (non-major)"
+    }
   ]
 }

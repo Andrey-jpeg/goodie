@@ -1,5 +1,16 @@
 # @goodie-ts/cli
 
+## 3.0.0
+
+### Major Changes
+
+- 730fb68: Require Node.js 24 or newer.
+
+### Patch Changes
+
+- Updated dependencies [730fb68]
+  - @goodie-ts/transformer@3.0.0
+
 ## 2.1.0
 
 ### Minor Changes

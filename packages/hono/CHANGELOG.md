@@ -1,5 +1,15 @@
 # @goodie-ts/hono
 
+## 3.0.0
+
+### Major Changes
+
+- 730fb68: Require patched Hono 4 releases and support @hono/node-server 2.
+
+### Minor Changes
+
+- 023b7e5: Expose build-time transformer plugins through dedicated `/plugin` entry points. Events, Kysely, and scheduler consumers that configure plugins manually must update their imports to use the new entry point.
+
 ## 2.1.0
 
 ### Minor Changes

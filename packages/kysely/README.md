@@ -98,7 +98,7 @@ Configure via `config/default.json`:
 
 ```typescript
 import { diPlugin } from '@goodie-ts/vite-plugin';
-import { createKyselyPlugin } from '@goodie-ts/kysely';
+import { createKyselyPlugin } from '@goodie-ts/kysely/plugin';
 
 export default defineConfig({
   plugins: [

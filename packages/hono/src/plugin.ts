@@ -24,7 +24,7 @@ import type { CodeBlockWriter } from 'ts-morph';
  * If no `BodyValidator` is registered in the DI context (e.g. no validation
  * package), the body passes through unvalidated.
  *
- * Auto-discovered via `"goodie": { "plugin": "dist/hono-plugin.js" }` in package.json.
+ * Auto-discovered via `"goodie": { "plugin": "dist/plugin.js" }` in package.json.
  */
 export default function createHonoPlugin(): TransformerPlugin {
   return {

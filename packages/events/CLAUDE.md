@@ -10,7 +10,7 @@ Event publishing and listener support for goodie-ts. `ApplicationEventListener` 
 | `src/application-event-listener.ts` | `ApplicationEventListener<E>` -- abstract base class with `eventType`, `supports()`, `onApplicationEvent()`, `order` |
 | `src/event-bus.ts` | `EventBus` -- in-memory event dispatcher; discovers listeners via `ApplicationContext.getAllAsync()`, groups by `eventType`, O(1) dispatch |
 | `src/event-publisher.ts` | `EventPublisher` -- abstract base class used as injection token via `baseTokenRefs` |
-| `src/events-transformer-plugin.ts` | `createEventsPlugin()` -- transformer plugin that detects `extends ApplicationEventListener` and synthesizes the `EventBus` component |
+| `src/plugin.ts` | `createEventsPlugin()` -- transformer plugin exported from `@goodie-ts/events/plugin` that detects `extends ApplicationEventListener` and synthesizes the `EventBus` component |
 | `src/index.ts` | Public API re-exports |
 
 ## How It Works

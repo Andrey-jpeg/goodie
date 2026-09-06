@@ -1,7 +1,7 @@
 import { transformInMemory } from '@goodie-ts/transformer';
 import { Project } from 'ts-morph';
 import { describe, expect, it } from 'vitest';
-import { createEventsPlugin } from '../src/events-transformer-plugin.js';
+import { createEventsPlugin } from '../src/plugin.js';
 
 const DECORATOR_STUBS = `
 export function Singleton() { return (t: any, c: any) => {} }

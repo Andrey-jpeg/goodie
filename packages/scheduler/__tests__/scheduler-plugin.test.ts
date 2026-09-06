@@ -1,7 +1,7 @@
 import { transformInMemory } from '@goodie-ts/transformer';
 import { Project } from 'ts-morph';
 import { describe, expect, it } from 'vitest';
-import { createSchedulerPlugin } from '../src/scheduler-transformer-plugin.js';
+import { createSchedulerPlugin } from '../src/plugin.js';
 
 const DECORATOR_STUBS = `
 export function Singleton() { return (t: any, c: any) => {} }

@@ -13,7 +13,7 @@
     "access": "public"
   },
   "goodie": {
-    "plugin": "./dist/events-transformer-plugin.js"
+    "plugin": "./dist/plugin.js"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,6 +21,10 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./plugin": {
+      "types": "./dist/plugin.d.ts",
+      "import": "./dist/plugin.js"
     }
   },
   "scripts": {

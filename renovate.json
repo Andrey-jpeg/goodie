@@ -45,6 +45,12 @@
       "followTag": "latest-12"
     },
     {
+      "description": "Batch compatible npm maintenance updates for one workspace validation pass.",
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "workspace dependencies (non-major)"
+    },
+    {
       "description": "Batch routine compiler and test tooling updates across the workspace.",
       "matchManagers": ["npm"],
       "matchPackageNames": ["typescript", "ts-morph", "vitest", "@vitest/**"],

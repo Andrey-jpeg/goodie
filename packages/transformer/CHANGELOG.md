@@ -1,5 +1,11 @@
 # @goodie-ts/transformer
 
+## 3.0.0
+
+### Major Changes
+
+- 730fb68: Upgrade the transformer and its public plugin types to ts-morph 28 and TypeScript 6 internals.
+
 ## 2.0.0
 
 ### Major Changes

@@ -1,5 +1,12 @@
 # @goodie-ts/kysely
 
+## 3.0.0
+
+### Major Changes
+
+- 730fb68: Require Kysely 0.29 or newer, use its dedicated migration entry point, and require kysely-neon 3 for Neon compatibility.
+- 023b7e5: Expose build-time transformer plugins through dedicated `/plugin` entry points. Events, Kysely, and scheduler consumers that configure plugins manually must update their imports to use the new entry point.
+
 ## 2.0.1
 
 ### Patch Changes

@@ -1,5 +1,17 @@
 # @goodie-ts/cli
 
+## 3.0.0
+
+### Major Changes
+
+- 730fb68: Require Node.js 24 or newer.
+
+### Patch Changes
+
+- f2e824f: Update citty to 0.2.2 and verify generate command argument parsing.
+- Updated dependencies [730fb68]
+  - @goodie-ts/transformer@3.0.0
+
 ## 2.1.0
 
 ### Minor Changes

@@ -32,7 +32,7 @@
     "clean": "rm -rf dist *.tsbuildinfo"
   },
   "dependencies": {
-    "croner": "^9.0.0"
+    "croner": "^10.0.0"
   },
   "peerDependencies": {
     "@goodie-ts/core": ">=2.0.0"

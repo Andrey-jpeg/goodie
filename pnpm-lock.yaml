@@ -8,7 +8,7 @@ catalogs:
   default:
     '@hono/node-server':
       specifier: ^2.1.1
-      version: 2.1.5
+      version: 2.1.6
     '@testcontainers/postgresql':
       specifier: ^12.1.0
       version: 12.2.1
@@ -20,10 +20,10 @@ catalogs:
       version: 8.23.1
     hono:
       specifier: ^4.13.5
-      version: 4.13.13
+      version: 4.13.16
     kysely:
       specifier: ^0.29.5
-      version: 0.29.7
+      version: 0.29.8
     pg:
       specifier: ^8.23.0
       version: 8.23.1
@@ -38,7 +38,7 @@ catalogs:
       version: 1.5.0
     vite:
       specifier: ^6.4.3
-      version: 6.4.4
+      version: 6.4.5
     vitest:
       specifier: ^3.2.7
       version: 3.2.7
@@ -49,7 +49,7 @@ importers:
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.5.12
-        version: 2.5.15
+        version: 2.6.5
       '@changesets/cli':
         specifier: ^3.0.0
         version: 3.0.3
@@ -85,13 +85,13 @@ importers:
         version: link:../../packages/kysely
       hono:
         specifier: 'catalog:'
-        version: 4.13.13
+        version: 4.13.16
       kysely:
         specifier: 'catalog:'
-        version: 0.29.7
+        version: 0.29.8
       kysely-d1:
         specifier: ^0.4.0
-        version: 0.4.0(kysely@0.29.7)
+        version: 0.4.0(kysely@0.29.8)
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^5.20260904.1
@@ -143,13 +143,13 @@ importers:
         version: link:../../packages/validation
       '@hono/node-server':
         specifier: 'catalog:'
-        version: 2.1.5(hono@4.13.13)
+        version: 2.1.6(hono@4.13.16)
       hono:
         specifier: 'catalog:'
-        version: 4.13.13
+        version: 4.13.16
       kysely:
         specifier: 'catalog:'
-        version: 0.29.7
+        version: 0.29.8
       pg:
         specifier: 'catalog:'
         version: 8.23.1
@@ -183,7 +183,7 @@ importers:
         version: 5.9.3
       vite:
         specifier: 'catalog:'
-        version: 6.4.4(@types/node@24.19.2)(yaml@2.9.0)
+        version: 6.4.5(@types/node@24.19.2)(yaml@2.9.0)
 
   packages/cache:
     devDependencies:
@@ -274,13 +274,13 @@ importers:
         version: link:../transformer
       '@hono/node-server':
         specifier: 'catalog:'
-        version: 2.1.5(hono@4.13.13)
+        version: 2.1.6(hono@4.13.16)
       '@types/node':
         specifier: 'catalog:'
         version: 24.19.2
       hono:
         specifier: 'catalog:'
-        version: 4.13.13
+        version: 4.13.16
       ts-morph:
         specifier: 'catalog:'
         version: 28.0.0
@@ -304,13 +304,13 @@ importers:
     dependencies:
       '@libsql/kysely-libsql':
         specifier: '>=0.4.0'
-        version: 0.4.1(kysely@0.29.7)
+        version: 0.4.1(kysely@0.29.8)
       kysely-d1:
         specifier: '>=0.4.0'
-        version: 0.4.0(kysely@0.29.7)
+        version: 0.4.0(kysely@0.29.8)
       kysely-planetscale:
         specifier: '>=1.0.0'
-        version: 1.7.1(@planetscale/database@1.20.1)(kysely@0.29.7)
+        version: 1.7.1(@planetscale/database@1.20.1)(kysely@0.29.8)
     devDependencies:
       '@goodie-ts/cli':
         specifier: workspace:*
@@ -338,10 +338,10 @@ importers:
         version: 13.0.3
       kysely:
         specifier: 'catalog:'
-        version: 0.29.7
+        version: 0.29.8
       kysely-neon:
         specifier: ^3.0.0
-        version: 3.0.0(@neondatabase/serverless@1.2.0)(kysely@0.29.7)
+        version: 3.0.0(@neondatabase/serverless@1.2.0)(kysely@0.29.8)
       mysql2:
         specifier: ^3.24.3
         version: 3.24.6(@types/node@24.19.2)
@@ -518,66 +518,78 @@ importers:
     devDependencies:
       vite:
         specifier: 'catalog:'
-        version: 6.4.4(@types/node@24.19.2)(yaml@2.9.0)
+        version: 6.4.5(@types/node@24.19.2)(yaml@2.9.0)
 
 packages:
 
   '@balena/dockerignore@1.0.2':
     resolution: {integrity: sha512-wMue2Sy4GAVTk6Ic4tJVcnfdau+gx2EnG7S+uAEe+TWJFqE4YoWN4/H8MSLj4eYJKxGg26lZwboEniNiNwZQ6Q==}
 
-  '@biomejs/biome@2.5.15':
-    resolution: {integrity: sha512-WZTW4slm/pdkh92K6t/3aEN++44JD1PQ7squ7RCMLI1flHGl43DVOIGXvCjHiZgBMO1V4uYxoFNtqrIA4qGuIQ==}
+  '@biomejs/biome@2.6.5':
+    resolution: {integrity: sha512-n0sp74QbSVEkWXlH659TKv4oJNylwAvDeZ8K8vt/PbcF1xneuNWe57z/G0Bxfh00cufhWXF6DiStLM8+jcLUpg==}
     engines: {node: '>=14.21.3'}
     hasBin: true
 
-  '@biomejs/cli-darwin-arm64@2.5.15':
-    resolution: {integrity: sha512-BZVzFhJ/mUvTLMYbc9x6el0o2Uv5zP7bACYyhFb6fSc1giroXm7PL0a5KqMJ9F+/BnkYRjagD/ROSDVOZ6eapg==}
+  '@biomejs/cli-android-arm64@2.6.5':
+    resolution: {integrity: sha512-fkLzc1WRU7wRIUNmAm7cxILb4dd6eESz/VycWvVFKVn6tXx0gFQKdUbPnwT42xys8AEvIJQpFGcK00kURwqorg==}
+    engines: {node: '>=14.21.3'}
+    cpu: [arm64]
+    os: [android]
+
+  '@biomejs/cli-android-x64@2.6.5':
+    resolution: {integrity: sha512-fkZ9dPnDAzAcaPtPCiwqtkub5C9FQK/oGCGaU9sq+DysTaq13pE9FxBIMcEZ3ydn8/FfcMdXi/DDzKDP+qyn2Q==}
+    engines: {node: '>=14.21.3'}
+    cpu: [x64]
+    os: [android]
+
+  '@biomejs/cli-darwin-arm64@2.6.5':
+    resolution: {integrity: sha512-bKd0EOREgnVjeZm4s9knQ+WdPOkWS3JHB+eWGHlx+Pq66bqQA1/KybwU0O+zuyAyXiphSCBcrLruZt3YtnJoaQ==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [darwin]
 
-  '@biomejs/cli-darwin-x64@2.5.15':
-    resolution: {integrity: sha512-V5Kw63V+fVGNFhFrizDxMbGXAzZCh8kYzJpy3GI6gTapWDg7bZK9oYC9CbVgQSEdTnupz0U5Efz8Ev+5vdBBXw==}
+  '@biomejs/cli-darwin-x64@2.6.5':
+    resolution: {integrity: sha512-UkT9BECNOXSiW6SGddjyaRACy362Sc9n3vDaTFkccL0bC2gW7JzM16i4+JKPbEaDn1Sa+oETHV8KungnI/y40Q==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [darwin]
 
-  '@biomejs/cli-linux-arm64-musl@2.5.15':
-    resolution: {integrity: sha512-tGzZUTcJCV7tj5Adh/Gn6nR4MycqA3iohq2LEcrarAgRBkU0h0OKd2UzCRkOsOYOuUGaUJb4YmqRqyy2feGGSw==}
+  '@biomejs/cli-linux-arm64-musl@2.6.5':
+    resolution: {integrity: sha512-kfc3AePW1a0/d/gUpcIz95nf3Ce8YY2/xL0Fk3fLqAhKsotqUi6PN6BaVWss4p6ijWbiuacZ9NQ4NiQtpjbYpw==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@biomejs/cli-linux-arm64@2.5.15':
-    resolution: {integrity: sha512-XaG7P7eeSLYETD3K9grfB0mQmpLQZjygdbsxekWBJAg4am79fGAtRpfRyNnTvXB2fZFNnJZG3nXm7HBat0+VUw==}
+  '@biomejs/cli-linux-arm64@2.6.5':
+    resolution: {integrity: sha512-H9cVMWBqW/lkFK9NHJdt0bpM2q7PacUDEjQoff9+m0dCV09H/jmBykfTCkbDthHf8+jCuWDJWiQFJ7bDkiGOcA==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@biomejs/cli-linux-x64-musl@2.5.15':
-    resolution: {integrity: sha512-IlxUcyxilVGPsE008x13pWdkTbU3nQpP2i9b5UrbOYj6goBkKsRX1XB7yJLcV+O1H9LBchIIm4adOaVLZBX0ZQ==}
+  '@biomejs/cli-linux-x64-musl@2.6.5':
+    resolution: {integrity: sha512-0mHVpLNt7/FugfZ2VPugUIEIiooWIyHGGJUqU9StxamBln9hz+maXRFIECU50jaf5/ZB93veGIViN5VKgw2AEA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@biomejs/cli-linux-x64@2.5.15':
-    resolution: {integrity: sha512-xE4iEW/3LqlYj9GFgGrFsFSH51dEEpUbYWBfeOv0q87WkUDxK2o/HhreSb7qMJqck70RVM6Lg96hgedcAYcOkA==}
+  '@biomejs/cli-linux-x64@2.6.5':
+    resolution: {integrity: sha512-e6/WMSN/+FhH+ZOoBevps/euxFQmv6BXqYNuTn1+ITR6O4XYFjHF5PeVSNZnjkgSYmvhcDkfepSX5lXczMijGA==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@biomejs/cli-win32-arm64@2.5.15':
-    resolution: {integrity: sha512-2kPKzhNlm8C+Ru3GcO0Me2ODkCBLrVOUNuyi84RJyWDVKAA4+Kjj3jMjL938lF6BRfvltC4vB2nPY9SvN51Ovg==}
+  '@biomejs/cli-win32-arm64@2.6.5':
+    resolution: {integrity: sha512-uBbfpdR/cH5up1iRJFGAPP97xKMzrgMs685CSrY7NM+Q4Unw7chY0o3JulEvJdmU6c6hGQxwqotMq7DDH0DzxA==}
     engines: {node: '>=14.21.3'}
     cpu: [arm64]
     os: [win32]
 
-  '@biomejs/cli-win32-x64@2.5.15':
-    resolution: {integrity: sha512-yAzh4UqEImV6Hcy0zjUqNfJAsUhoD64FBQCdTG8Md/Z2wQeVP/ZmJ3XRYAs1g8J9fjTFyl2fCtc5FB5til47+g==}
+  '@biomejs/cli-win32-x64@2.6.5':
+    resolution: {integrity: sha512-07LaCeN9vvmbAAMOMsUjMfL5UbsCDkvVeyMJIgwNRc0xYqhizBGkjVzx05LYEwCXl2AiHcdzqVPR4IOYAsI1QQ==}
     engines: {node: '>=14.21.3'}
     cpu: [x64]
     os: [win32]
@@ -1186,8 +1198,8 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
-  '@hono/node-server@2.1.5':
-    resolution: {integrity: sha512-MgP/I06GdvsilDspMk/qmRzpk8LOUStP6jFAbSRi40W09DhoyUn+Mj7eyKICPqeYKybOjVFLVIAQzvu1bfIa7Q==}
+  '@hono/node-server@2.1.6':
+    resolution: {integrity: sha512-p/KH9MnfNcsm3sR6x4lNgm5j+QN4Et8srKredl9DZfXiyZ1UQ3aQ2YVpFLbqktYN5JI+DB+VZFKM2PqE5hLKjQ==}
     engines: {node: '>=20'}
     peerDependencies:
       hono: ^4 || ^5.0.0-0
@@ -2084,8 +2096,8 @@ packages:
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
 
-  hono@4.13.13:
-    resolution: {integrity: sha512-CQ46U0ZkAGmbT/4UxdzzGJpacP2IeKgY4a5/tOI9AABbpOMfK739wfDXmv1usCk+3RkKj1hQy4/fjhiwa2xlrA==}
+  hono@4.13.16:
+    resolution: {integrity: sha512-AOLOEhvrV+iH92xXCnFr/5+3KjPKcI3xP63XJtX5spAnkznPdHijlIsUTpi7/9EhWqrTCekw5c5zh1K+YsVw7A==}
     engines: {node: '>=16.9.0'}
 
   human-id@4.2.1:
@@ -2164,8 +2176,8 @@ packages:
       '@planetscale/database': '*'
       kysely: '*'
 
-  kysely@0.29.7:
-    resolution: {integrity: sha512-fmIq+7kv4WbFm2tcfznRzikqB4cuNpgZ40PSU2fAJ2/OO5XhojqnTPrmgrCjYSRJVwBln03XcRXJGnw9H099IQ==}
+  kysely@0.29.8:
+    resolution: {integrity: sha512-ixHU1H4R+LeC5Y0nAhYgiGRFpFRHm2DXKEmJSs/vbes9sKXyssyzxzE/NYiOJX5fY0BL28biCre3GqlCqUwyXQ==}
     engines: {node: '>=22.0.0'}
 
   launch-editor@2.14.2:
@@ -2628,8 +2640,8 @@ packages:
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
 
-  vite@6.4.4:
-    resolution: {integrity: sha512-xGjU/SyjeNyb0E4KxXBvYz/1C+3JXuujvf2hXNOtnlcE+58o5ajd9N2/n2VhkiJvpCP2qQasnUpx5PXNeI+p1Q==}
+  vite@6.4.5:
+    resolution: {integrity: sha512-4enwjFfi4IwtEh0w+jPzpLVOFQiPHmmzPxcHXQOyEur47o6u0jE573DmGpjA+7irXoMLYRZD5ZaFUEneS3abPg==}
     engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
     hasBin: true
     peerDependencies:
@@ -2840,39 +2852,47 @@ snapshots:
 
   '@balena/dockerignore@1.0.2': {}
 
-  '@biomejs/biome@2.5.15':
+  '@biomejs/biome@2.6.5':
     optionalDependencies:
-      '@biomejs/cli-darwin-arm64': 2.5.15
-      '@biomejs/cli-darwin-x64': 2.5.15
-      '@biomejs/cli-linux-arm64': 2.5.15
-      '@biomejs/cli-linux-arm64-musl': 2.5.15
-      '@biomejs/cli-linux-x64': 2.5.15
-      '@biomejs/cli-linux-x64-musl': 2.5.15
-      '@biomejs/cli-win32-arm64': 2.5.15
-      '@biomejs/cli-win32-x64': 2.5.15
+      '@biomejs/cli-android-arm64': 2.6.5
+      '@biomejs/cli-android-x64': 2.6.5
+      '@biomejs/cli-darwin-arm64': 2.6.5
+      '@biomejs/cli-darwin-x64': 2.6.5
+      '@biomejs/cli-linux-arm64': 2.6.5
+      '@biomejs/cli-linux-arm64-musl': 2.6.5
+      '@biomejs/cli-linux-x64': 2.6.5
+      '@biomejs/cli-linux-x64-musl': 2.6.5
+      '@biomejs/cli-win32-arm64': 2.6.5
+      '@biomejs/cli-win32-x64': 2.6.5
 
-  '@biomejs/cli-darwin-arm64@2.5.15':
+  '@biomejs/cli-android-arm64@2.6.5':
     optional: true
 
-  '@biomejs/cli-darwin-x64@2.5.15':
+  '@biomejs/cli-android-x64@2.6.5':
     optional: true
 
-  '@biomejs/cli-linux-arm64-musl@2.5.15':
+  '@biomejs/cli-darwin-arm64@2.6.5':
     optional: true
 
-  '@biomejs/cli-linux-arm64@2.5.15':
+  '@biomejs/cli-darwin-x64@2.6.5':
     optional: true
 
-  '@biomejs/cli-linux-x64-musl@2.5.15':
+  '@biomejs/cli-linux-arm64-musl@2.6.5':
     optional: true
 
-  '@biomejs/cli-linux-x64@2.5.15':
+  '@biomejs/cli-linux-arm64@2.6.5':
     optional: true
 
-  '@biomejs/cli-win32-arm64@2.5.15':
+  '@biomejs/cli-linux-x64-musl@2.6.5':
     optional: true
 
-  '@biomejs/cli-win32-x64@2.5.15':
+  '@biomejs/cli-linux-x64@2.6.5':
+    optional: true
+
+  '@biomejs/cli-win32-arm64@2.6.5':
+    optional: true
+
+  '@biomejs/cli-win32-x64@2.6.5':
     optional: true
 
   '@changesets/apply-release-plan@8.1.1':
@@ -3278,9 +3298,9 @@ snapshots:
       protobufjs: 7.6.6
       yargs: 17.7.3
 
-  '@hono/node-server@2.1.5(hono@4.13.13)':
+  '@hono/node-server@2.1.6(hono@4.13.16)':
     dependencies:
-      hono: 4.13.13
+      hono: 4.13.16
 
   '@img/colour@1.1.0': {}
 
@@ -3455,10 +3475,10 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@libsql/kysely-libsql@0.4.1(kysely@0.29.7)':
+  '@libsql/kysely-libsql@0.4.1(kysely@0.29.8)':
     dependencies:
       '@libsql/client': 0.8.1
-      kysely: 0.29.7
+      kysely: 0.29.8
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
@@ -4136,7 +4156,7 @@ snapshots:
 
   graceful-fs@4.2.11: {}
 
-  hono@4.13.13: {}
+  hono@4.13.16: {}
 
   human-id@4.2.1: {}
 
@@ -4178,22 +4198,22 @@ snapshots:
 
   kleur@4.1.5: {}
 
-  kysely-d1@0.4.0(kysely@0.29.7):
+  kysely-d1@0.4.0(kysely@0.29.8):
     dependencies:
-      kysely: 0.29.7
+      kysely: 0.29.8
 
-  kysely-neon@3.0.0(@neondatabase/serverless@1.2.0)(kysely@0.29.7):
+  kysely-neon@3.0.0(@neondatabase/serverless@1.2.0)(kysely@0.29.8):
     dependencies:
       '@neondatabase/serverless': 1.2.0
-      kysely: 0.29.7
+      kysely: 0.29.8
 
-  kysely-planetscale@1.7.1(@planetscale/database@1.20.1)(kysely@0.29.7):
+  kysely-planetscale@1.7.1(@planetscale/database@1.20.1)(kysely@0.29.8):
     dependencies:
       '@planetscale/database': 1.20.1
       date-fns: 3.6.0
-      kysely: 0.29.7
+      kysely: 0.29.8
 
-  kysely@0.29.7: {}
+  kysely@0.29.8: {}
 
   launch-editor@2.14.2:
     dependencies:
@@ -4761,7 +4781,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite@6.4.4(@types/node@24.19.2)(yaml@2.9.0):
+  vite@6.4.5(@types/node@24.19.2)(yaml@2.9.0):
     dependencies:
       esbuild: 0.25.12
       fdir: 6.5.0(picomatch@4.0.7)
